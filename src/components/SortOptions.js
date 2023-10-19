@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const SortingOptions = ({ currentSorting, setCurrentSorting }) => {
+const SortOptions = ({ currentSorting, setCurrentSorting }) => {
   const sortingOptions = ['priority', 'title'];
 
   const handleChange = (e) => {
@@ -27,5 +27,5 @@ const SortingOptions = ({ currentSorting, setCurrentSorting }) => {
   );
 };
 
-export default SortingOptions;
+export default SortOptions;
 
