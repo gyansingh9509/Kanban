@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const GroupingOptions = ({ currentGrouping, setCurrentGrouping }) => {
+const GrpOptions = ({ currentGrouping, setCurrentGrouping }) => {
   const groupingOptions = ['status', 'user', 'priority'];
 
   const handleChange = (e) => {
@@ -27,4 +27,4 @@ const GroupingOptions = ({ currentGrouping, setCurrentGrouping }) => {
   );
 };
 
-export default GroupingOptions;
+export default GrpOptions;
