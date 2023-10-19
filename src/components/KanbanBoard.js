@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import GroupingOptions from './GroupingOptions';
-import SortingOptions from './SortingOptions';
+import GroupingOptions from './GrpOptions';
+import SortingOptions from './SortOptions';
 import Ticket from './Ticket';
 import { fetchTickets } from '../api/api'; // Import the API functions
 
@@ -75,8 +75,8 @@ const KanbanBoard = (props) => {
 
   return (
     <div className="kanban-board">
-      <GroupingOptions currentGrouping={currentGrouping} setCurrentGrouping={setCurrentGrouping} />
-      <SortingOptions currentSorting={currentSorting} setCurrentSorting={setCurrentSorting} />
+      <GrpOptions currentGrouping={currentGrouping} setCurrentGrouping={setCurrentGrouping} />
+      <SortOptions currentSorting={currentSorting} setCurrentSorting={setCurrentSorting} />
 
       <div className="board">
         {Object.keys(groupedTicketsToDisplay).map((group) => (
